@@ -19,5 +19,8 @@ int main()
     float largest = max(first, second);
     largest = max(largest, third);
     
-    cout << "The largest number is " << largest << endl;
+    
+    
+    
+    
 }
