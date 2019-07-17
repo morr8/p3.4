@@ -1,15 +1,23 @@
-//
-//  main.cpp
-//  p3.4
-//
-//  Created by Sergio campos on 7/17/19.
-//  Copyright © 2019 Sergio campos. All rights reserved.
-//
+/*
+ •• P3.4
+ Write a program that reads in three floating-point numbers and prints the largest of the three inputs. For example:
+ 
+ Please enter three numbers: 4 9 2.5
+ The largest number is 9.
+ */
 
 #include <iostream>
+#include <algorithm>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+using namespace std;
+
+int main()
+{
+    cout << "Please enter three numbers: ";
+    float first, second, third;
+    cin >> first >> second >> third;
+    float largest = max(first, second);
+    largest = max(largest, third);
+    
+    cout << "The largest number is " << largest << endl;
 }
